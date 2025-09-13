@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda de Peces</title>
+
+  <!-- Manifest -->
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#006994">
+
+  <!-- Estilos -->
   <style>
     body {
       margin: 0;
@@ -40,7 +44,7 @@
     .hero {
       text-align: center;
       padding: 50px 20px;
-      background: url("https://images.unsplash.com/photo-1517832207067-4db24a2ae47c") no-repeat center center/cover;
+      background: url("https://images.unsplash.com/photo-1583394838336-acd977736f90") no-repeat center center/cover;
       color: white;
     }
     .hero h2 {
@@ -114,7 +118,7 @@
 
   <section class="hero">
     <h2>Bienvenido a la Tienda de Peces</h2>
-    <p>Explora nuestra colección de peces tropicales, de agua dulce y marina.</p>
+    <p>Explora nuestra colección de peces tropicales, de agua dulce y marinos.</p>
   </section>
 
   <section class="catalogo">
@@ -135,6 +139,16 @@
         <h3>Pez Guppy</h3>
         <p>Pequeño, activo y con gran variedad de colores.</p>
       </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1508184964240-ee36f2ddc8a0" alt="Pez Payaso">
+        <h3>Pez Payaso</h3>
+        <p>Popular por la película Nemo, vive en aguas saladas.</p>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5" alt="Pez Disco">
+        <h3>Pez Disco</h3>
+        <p>De agua dulce, muy valorado por sus colores vibrantes.</p>
+      </div>
     </div>
   </section>
 
@@ -142,6 +156,7 @@
     <p>© 2025 Tienda de Peces | Todos los derechos reservados</p>
   </footer>
 
+  <!-- Registro del Service Worker -->
   <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js")
